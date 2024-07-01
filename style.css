@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+header {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+header img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-bottom: 20px;
+}
+.Useful-Links {
+  display: flex;
+  gap: 20px;
+}
+.Useful-Links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Add responsive design rules */
+
+/* For desktop screens */
+@media (min-width: 1200px) {
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  main {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  main {
+    max-width: 400px;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    width: auto;
+    height: auto;
+  }
+  .Useful-Links ul {
+    flex-direction: column;
+  }
+  .Useful-Links {
+    flex-direction: column;
+  }
+}
